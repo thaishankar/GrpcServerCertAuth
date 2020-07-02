@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ZipCacheClient": {
+      "commandName": "Project",
+      "commandLineArgs": "172.17.44.209:50051 D:\\cert\\"
+    }
+  }
+}

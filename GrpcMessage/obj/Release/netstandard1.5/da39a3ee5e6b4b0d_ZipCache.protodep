@@ -1,0 +1,2 @@
+obj\Release\netstandard1.5/ZipCache.cs \
+obj\Release\netstandard1.5/ZipCacheGrpc.cs: ZipCache.proto

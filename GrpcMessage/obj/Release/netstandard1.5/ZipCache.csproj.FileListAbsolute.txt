@@ -1,0 +1,8 @@
+C:\Users\kranthim\source\repos\FileCacheGrpc\ZipCache\bin\Release\netstandard1.5\ZipCache.deps.json
+C:\Users\kranthim\source\repos\FileCacheGrpc\ZipCache\bin\Release\netstandard1.5\ZipCache.dll
+C:\Users\kranthim\source\repos\FileCacheGrpc\ZipCache\bin\Release\netstandard1.5\ZipCache.pdb
+C:\Users\kranthim\source\repos\FileCacheGrpc\ZipCache\obj\Release\netstandard1.5\ZipCache.csprojAssemblyReference.cache
+C:\Users\kranthim\source\repos\FileCacheGrpc\ZipCache\obj\Release\netstandard1.5\ZipCache.AssemblyInfoInputs.cache
+C:\Users\kranthim\source\repos\FileCacheGrpc\ZipCache\obj\Release\netstandard1.5\ZipCache.AssemblyInfo.cs
+C:\Users\kranthim\source\repos\FileCacheGrpc\ZipCache\obj\Release\netstandard1.5\ZipCache.dll
+C:\Users\kranthim\source\repos\FileCacheGrpc\ZipCache\obj\Release\netstandard1.5\ZipCache.pdb

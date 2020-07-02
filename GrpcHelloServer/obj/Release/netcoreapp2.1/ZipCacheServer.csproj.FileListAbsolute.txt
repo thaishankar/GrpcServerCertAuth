@@ -1,0 +1,13 @@
+C:\Users\kranthim\source\repos\FileCacheGrpc\ZipCacheServer\bin\Release\netcoreapp2.1\ZipCacheServer.deps.json
+C:\Users\kranthim\source\repos\FileCacheGrpc\ZipCacheServer\bin\Release\netcoreapp2.1\ZipCacheServer.runtimeconfig.json
+C:\Users\kranthim\source\repos\FileCacheGrpc\ZipCacheServer\bin\Release\netcoreapp2.1\ZipCacheServer.runtimeconfig.dev.json
+C:\Users\kranthim\source\repos\FileCacheGrpc\ZipCacheServer\bin\Release\netcoreapp2.1\ZipCacheServer.dll
+C:\Users\kranthim\source\repos\FileCacheGrpc\ZipCacheServer\bin\Release\netcoreapp2.1\ZipCacheServer.pdb
+C:\Users\kranthim\source\repos\FileCacheGrpc\ZipCacheServer\bin\Release\netcoreapp2.1\ZipCache.dll
+C:\Users\kranthim\source\repos\FileCacheGrpc\ZipCacheServer\bin\Release\netcoreapp2.1\ZipCache.pdb
+C:\Users\kranthim\source\repos\FileCacheGrpc\ZipCacheServer\obj\Release\netcoreapp2.1\ZipCacheServer.csprojAssemblyReference.cache
+C:\Users\kranthim\source\repos\FileCacheGrpc\ZipCacheServer\obj\Release\netcoreapp2.1\ZipCacheServer.AssemblyInfoInputs.cache
+C:\Users\kranthim\source\repos\FileCacheGrpc\ZipCacheServer\obj\Release\netcoreapp2.1\ZipCacheServer.AssemblyInfo.cs
+C:\Users\kranthim\source\repos\FileCacheGrpc\ZipCacheServer\obj\Release\netcoreapp2.1\ZipCacheServer.csproj.CopyComplete
+C:\Users\kranthim\source\repos\FileCacheGrpc\ZipCacheServer\obj\Release\netcoreapp2.1\ZipCacheServer.dll
+C:\Users\kranthim\source\repos\FileCacheGrpc\ZipCacheServer\obj\Release\netcoreapp2.1\ZipCacheServer.pdb

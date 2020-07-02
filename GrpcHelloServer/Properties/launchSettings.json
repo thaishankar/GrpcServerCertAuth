@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ZipCacheServer": {
+      "commandName": "Project",
+      "commandLineArgs": "D:\\cert\\"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\thshanmu\\source\\repos\\HelloGrpc\\GrpcMessage\\GrpcMessage.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\thshanmu\\source\\repos\\HelloGrpc\\GrpcMessage\\GrpcMessage.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\thshanmu\\source\\repos\\HelloGrpc\\GrpcMessage\\GrpcMessage.csproj",
+        "projectName": "GrpcMessage",
+        "projectPath": "C:\\Users\\thshanmu\\source\\repos\\HelloGrpc\\GrpcMessage\\GrpcMessage.csproj",
+        "packagesPath": "C:\\Users\\thshanmu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thshanmu\\source\\repos\\HelloGrpc\\GrpcMessage\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\thshanmu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard1.5"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard1.5": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard1.5": {
+          "dependencies": {
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.8.0, )"
+            },
+            "Grpc": {
+              "target": "Package",
+              "version": "[2.23.0, )"
+            },
+            "Grpc.Tools": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.23.0, )"
+            },
+            "NETStandard.Library": {
+              "target": "Package",
+              "version": "[1.6.1, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
