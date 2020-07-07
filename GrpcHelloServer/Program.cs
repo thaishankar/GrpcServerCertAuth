@@ -4,8 +4,10 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
+using System.Security.Cryptography.X509Certificates;
 using System.Threading;
 using System.Threading.Tasks;
+using FileCacheAgent.Common;
 using Google.Protobuf;
 using Grpc.Core;
 
@@ -46,15 +48,28 @@ namespace GrpcHelloServer
                 if (args.Length >= 1)
                 {
                     certLocationAndFileNamePrefix = args[0];
+                    string pfxBlobPath = certLocationAndFileNamePrefix + "FCACert.pfx";
 
-                    key = certLocationAndFileNamePrefix + "GrpcCert2.key.pem";
-                    cert = certLocationAndFileNamePrefix + "GrpcCert2.crt.pem";
+                    string pemEncodedCertWithPublicKeyOnly, pemEncodedPrivateKey;
+                    X509Certificate2 fileCacheAgentCert;
+                    X509CertToPemUtil.GetPemEncodedCertChainAndPrivateKey(
+                        File.ReadAllText(pfxBlobPath),
+                        out pemEncodedCertWithPublicKeyOnly,
+                        out pemEncodedPrivateKey,
+                        out fileCacheAgentCert);
 
-                    var keyCertPair = new KeyCertificatePair(
-                        File.ReadAllText(cert),
-                        File.ReadAllText(key));
+                    Console.WriteLine(string.Format("FileCacheAgentCert: {0} Issuer: {1} Thumbprint: {2}",
+                                                                                            fileCacheAgentCert.Subject,
+                                                                                            fileCacheAgentCert.Issuer,
+                                                                                            fileCacheAgentCert.Thumbprint));
 
-                    serverCredentials = new SslServerCredentials(new[] { keyCertPair });
+                    string pemEncodedCertChainWithPublicKeyOnly = X509CertToPemUtil.GetPemEncodedCertChain(fileCacheAgentCert);
+
+                    File.WriteAllText("CertChain.pem", pemEncodedCertChainWithPublicKeyOnly);
+
+                    KeyCertificatePair keyCertificatePair = new KeyCertificatePair(pemEncodedCertChainWithPublicKeyOnly, pemEncodedPrivateKey);
+
+                    serverCredentials = new SslServerCredentials(new[] { keyCertificatePair });
                 }
 
                 Console.WriteLine("Key = {0} Cert: {1}", key, cert);

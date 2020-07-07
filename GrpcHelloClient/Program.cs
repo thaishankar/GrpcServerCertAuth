@@ -67,17 +67,30 @@ namespace GrpcHelloClient
             }
             else
             {
-                string certificate = serverCertLocationAndFileNamePrefix + "GrpcCert.crt.pem";
+                //string certificate = serverCertLocationAndFileNamePrefix + "GrpcCert.crt.pem";
 
-                // NOTE: This should match the target name(Subject Alternate Name) in the server cert. 
-                // If there is no target name, then this is the same as Subject Common Name in the cert
-                string certSubjectName = "MyGRPCService2.com";
+                //// NOTE: This should match the target name(Subject Alternate Name) in the server cert. 
+                //// If there is no target name, then this is the same as Subject Common Name in the cert
+                //string certSubjectName = "MyGRPCService2.com";
+                //var channelCredentials = new SslCredentials(File.ReadAllText(certificate), null, ValidateGrpcServerCertificate);
 
-                var channelCredentials = new SslCredentials(File.ReadAllText(certificate), null, ValidateGrpcServerCertificate);
-                channel = new Channel(endpoint, channelCredentials, new[] { new ChannelOption(ChannelOptions.SslTargetNameOverride, certSubjectName) });
+                string certSubjectName = @"FileCacheAgent.appservice-test.compute.ce.azure.net";
+
+                SslCredentials sslCredentials = new SslCredentials(
+                    File.ReadAllText(@"d:\cert\fca\AllowedKeys.pem"),
+                    null,
+                    verifyPeerContext => ValidateFileCacheAgentServerCert(verifyPeerContext));
+
+                channel = new Channel(endpoint, sslCredentials, new[] { new ChannelOption(ChannelOptions.SslTargetNameOverride, certSubjectName) });
             }
 
             return new GrpcMessage.GrpcHello.GrpcHelloClient(channel);
+        }
+
+        private static bool ValidateFileCacheAgentServerCert(VerifyPeerContext verifyPeerContext)
+        {
+            // TODO
+            return true;
         }
 
         private static bool ValidateGrpcServerCertificate(VerifyPeerContext context)

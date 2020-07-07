@@ -2,7 +2,7 @@
   "profiles": {
     "ZipCacheServer": {
       "commandName": "Project",
-      "commandLineArgs": "D:\\cert\\"
+      "commandLineArgs": "D:\\cert\\FCA\\"
     }
   }
 }

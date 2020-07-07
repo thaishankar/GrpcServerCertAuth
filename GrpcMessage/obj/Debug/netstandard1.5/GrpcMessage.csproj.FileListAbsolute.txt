@@ -15,3 +15,4 @@ C:\Users\thshanmu\source\repos\HelloGrpc\GrpcMessage\obj\Debug\netstandard1.5\Gr
 C:\Users\thshanmu\source\repos\HelloGrpc\GrpcMessage\obj\Debug\netstandard1.5\GrpcMessage.csproj.CoreCompileInputs.cache
 C:\Users\thshanmu\source\repos\HelloGrpc\GrpcMessage\obj\Debug\netstandard1.5\GrpcMessage.dll
 C:\Users\thshanmu\source\repos\HelloGrpc\GrpcMessage\obj\Debug\netstandard1.5\GrpcMessage.pdb
+C:\Users\thshanmu\source\repos\HelloGrpc\GrpcMessage\obj\Debug\netstandard1.5\GrpcMessage.csprojAssemblyReference.cache

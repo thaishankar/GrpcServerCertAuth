@@ -14,4 +14,10 @@
     <ProjectReference Include="..\GrpcMessage\GrpcMessage.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="FileCacheAgent.Common">
+      <HintPath>..\..\..\..\..\..\wagit\AAPT-Antares-WebSites\out\debug-amd64\FileCacheAgent.Common\FileCacheAgent.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

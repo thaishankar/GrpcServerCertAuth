@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v2.1": {
       "GrpcHelloServer/1.0.0": {
         "dependencies": {
-          "GrpcMessage": "1.0.0"
+          "GrpcMessage": "1.0.0",
+          "FileCacheAgent.Common": "7.1.0.0"
         },
         "runtime": {
           "GrpcHelloServer.dll": {}
@@ -94,6 +95,14 @@
         "runtime": {
           "GrpcMessage.dll": {}
         }
+      },
+      "FileCacheAgent.Common/7.1.0.0": {
+        "runtime": {
+          "FileCacheAgent.Common.dll": {
+            "assemblyVersion": "7.1.0.0",
+            "fileVersion": "89.0.1.40"
+          }
+        }
       }
     }
   },
@@ -140,6 +149,11 @@
     },
     "GrpcMessage/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FileCacheAgent.Common/7.1.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

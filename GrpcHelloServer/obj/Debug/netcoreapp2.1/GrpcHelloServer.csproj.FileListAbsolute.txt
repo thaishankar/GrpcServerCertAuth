@@ -28,3 +28,5 @@ C:\Users\thshanmu\source\repos\HelloGrpc\GrpcHelloServer\bin\Debug\netcoreapp2.1
 C:\Users\thshanmu\source\repos\HelloGrpc\GrpcHelloServer\bin\Debug\netcoreapp2.1\GrpcMessage.pdb
 C:\Users\thshanmu\source\repos\HelloGrpc\GrpcHelloServer\obj\Debug\netcoreapp2.1\GrpcHelloServer.csproj.CopyComplete
 C:\Users\thshanmu\source\repos\HelloGrpc\GrpcHelloServer\obj\Debug\netcoreapp2.1\GrpcHelloServer.genruntimeconfig.cache
+C:\Users\thshanmu\source\repos\HelloGrpc\GrpcHelloServer\bin\Debug\netcoreapp2.1\FileCacheAgent.Common.dll
+C:\Users\thshanmu\source\repos\HelloGrpc\GrpcHelloServer\bin\Debug\netcoreapp2.1\FileCacheAgent.Common.pdb
